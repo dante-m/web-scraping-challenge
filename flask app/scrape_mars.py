@@ -84,14 +84,11 @@ def twitter_weather(browser):
     for tweets in mars_weather_tweet: 
         weather_tweet = tweets.text
         if "Sol" and "pressure" in weather_tweet:
-            mars_weather = weather_tweet
+            return (weather_tweet)
             break
         else: 
-            continue
-    return mars_weather
-    
+            pass
 
-    
    
 # Mars Facts Web Scraper
 def mars_facts():
